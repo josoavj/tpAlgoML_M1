@@ -7,4 +7,4 @@ def siresolvable(grille):
         for colonneGrille in range(ligneGrille + 1, len(plan_grille)):
             if plan_grille[ligneGrille] > plan_grille[colonneGrille]:
                 inversion += 1
-    return  inversion % 2 == 0
+    return inversion % 2 == 0
