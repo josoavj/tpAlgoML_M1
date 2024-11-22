@@ -21,3 +21,7 @@ BLUE = (70, 130, 180)
 
 # Police: Modification de la police pour l'ensemble des interfaces
 font = pygame.font.SysFont("Poppins", 40)
+
+# Lancement du Jeu
+if __name__ == "__main__":
+#    main()
