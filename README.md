@@ -12,3 +12,7 @@
 - [RAFALIMANANA Minosoa Mampionona](https://github.com/MinosoaRafalimanana) IGGLIA4 N°40 **Rôle:** Développeur Front-end
 - [RAHELIMALALA Anja Nasandratra](https://github.com/AnjaRahelimalala) IGGLIA4 N°41 **Rôle:** Développeur Front-end 
 - [RABEMANANJARA Minoarisoa Jaela](https://github.com/FyJael) IGGLIA4 N°46 **Rôle:** Designer
+
+### Code fonctionnel
+
+- Main: **puzzlegame.py**
