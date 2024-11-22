@@ -53,14 +53,21 @@ def main():
 
             if event.type == pygame.KEYDOWN and not choosing_grid:
                 # Gestion des mouvements dans le jeu
+                """
+                Commandes (Flêches): Déplacement d'un élement proche de la case vide
+                  - UP: Case vide vers le haut
+                  - DOWN: Case vide vers le bas
+                  - LEFT: Case vide vers la gauche
+                  - RIGHT: Case vide vers la droite
+                """
                 x, y = next((i, j) for i, row in enumerate(puzzle) for j, tile in enumerate(row) if tile == 0)
-                if event.key == pygame.K_UP and x < grid_size - 1:
+                if event.key == pygame.K_DOWN and x < grid_size - 1:
                     puzzle[x][y], puzzle[x + 1][y] = puzzle[x + 1][y], puzzle[x][y]
-                elif event.key == pygame.K_DOWN and x > 0:
+                elif event.key == pygame.K_UP and x > 0:
                     puzzle[x][y], puzzle[x - 1][y] = puzzle[x - 1][y], puzzle[x][y]
-                elif event.key == pygame.K_LEFT and y < grid_size - 1:
+                elif event.key == pygame.K_RIGHT and y < grid_size - 1:
                     puzzle[x][y], puzzle[x][y + 1] = puzzle[x][y + 1], puzzle[x][y]
-                elif event.key == pygame.K_RIGHT and y > 0:
+                elif event.key == pygame.K_LEFT and y > 0:
                     puzzle[x][y], puzzle[x][y - 1] = puzzle[x][y - 1], puzzle[x][y]
 
         # Interface de choix de la grille
