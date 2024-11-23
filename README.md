@@ -16,3 +16,13 @@
 ### Code fonctionnel
 
 - Main: **Sliding puzzle.ipynb**
+
+
+![Homepage](https://example.com/chat.jpg)
+![Options definition](https://example.com/chat.jpg)
+![sliding Game](https://example.com/chat.jpg)
+![8-puzzle 4-swap](https://example.com/chat.jpg)
+
+
+
+
