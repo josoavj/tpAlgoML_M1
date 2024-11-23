@@ -21,7 +21,7 @@
 ![Homepage](https://example.com/chat.jpg)
 ![Options definition](https://example.com/chat.jpg)
 ![sliding Game](https://example.com/chat.jpg)
-![8-puzzle 4-swap]([https://example.com/chat.jpg](https://github.com/josoavj/tpAlgoML_M1/blob/master/assets/8-puzzle4_swap.png))
+![8-puzzle 4-swap](https://github.com/josoavj/tpAlgoML_M1/blob/master/assets/8-puzzle4_swap.png)
 
 
 
