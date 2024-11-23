@@ -15,4 +15,4 @@
 
 ### Code fonctionnel
 
-- Main: **puzzlegame.py**
+- Main: **Sliding puzzle.ipynb**
