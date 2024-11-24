@@ -1,10 +1,11 @@
-# Teste si le puzzle est résolvable en comptant à l'inverse
 
-def siresolvable(grille):
-    plan_grille = [tuile for ligne in grille for tuile in ligne if tuile != 0]
-    inversion = 0
-    for ligneGrille in range(len(plan_grille)):
-        for colonneGrille in range(ligneGrille + 1, len(plan_grille)):
-            if plan_grille[ligneGrille] > plan_grille[colonneGrille]:
-                inversion += 1
-    return inversion % 2 == 0
+# Fonction pour vérifier si une grille est résolvable
+def is_solvable(grid):
+    flat_grid = [tile for row in grid for tile in row if tile != 0]
+    inversions = 0
+    for i in range(len(flat_grid)):
+        for j in range(i + 1, len(flat_grid)):
+            if flat_grid[i] > flat_grid[j]:
+                inversions += 1
+    return inversions % 2 == 0
+
