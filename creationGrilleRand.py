@@ -1,21 +1,34 @@
+import random
+
 import pygame
-from ajoutTexte import ajouttexte
 
-# Couleurs
-WHITE = (255, 255, 255)
-BLACK = (0, 0, 0)
-GRAY = (200, 200, 200)
-BLUE = (70, 130, 180)
+from config import *
+from testResolutionPuzzle import is_solvable
+
+# Variable
+selected_tiles = []
+
+# Fonction pour créer une grille aléatoire
+def create_puzzle(size):
+    tiles = list(range(size * size))
+    while True:
+        random.shuffle(tiles)
+        grid = [tiles[i:i + size] for i in range(0, len(tiles), size)]
+        if is_solvable(grid):
+            return grid
 
 
-def dessinergrille(ecran, largeurecran, font, grille, taille):
-    ecran.fill(WHITE)
-    taille_tuile = largeurecran // taille
-    for i, row in enumerate(grille):
+# Fonction pour dessiner la grille du puzzle
+def draw_grid(grid, pieces, grid_size):
+    tile_size = SCREEN_WIDTH // grid_size
+    for i, row in enumerate(grid):
         for j, tile in enumerate(row):
-            x = j * taille_tuile
-            y = i * taille_tuile
+            x = j * tile_size
+            y = i * tile_size
             if tile != 0:  # Ne pas dessiner l'espace vide
-                pygame.draw.rect(ecran, BLUE, (x, y, taille_tuile, taille_tuile))
-                ajouttexte(ecran, font, str(tile), WHITE, x + taille_tuile // 2, y + taille_tuile // 2)
-            pygame.draw.rect(ecran, BLACK, (x, y, taille_tuile, taille_tuile), 2)
+                screen.blit(pieces[tile], (x, y))
+            pygame.draw.rect(screen, GRAY, (x, y, tile_size, tile_size), 2)
+
+            #Si tuile sélectionné
+            if (i , j) in selected_tiles:
+                pygame.draw.rect(screen, BLUE, (j * tile_size, i * tile_size, tile_size, tile_size), 2)
