@@ -1,7 +1,7 @@
 # Fonction pour découper une image en morceaux
 import pygame
 
-from main import SCREEN_WIDTH, SCREEN_HEIGHT
+from config import SCREEN_WIDTH, SCREEN_HEIGHT
 
 
 def slice_image(image, grid_size):
