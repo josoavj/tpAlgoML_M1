@@ -160,7 +160,7 @@ def move_tile(grid, direction):
             swap_available = True
             show_alert = True
 
-#Foncton pour échanger les tuiles
+#Fonction pour échanger les tuiles
 def perfomr_swap(puzzle, selected_tiles):
     if len(selected_tiles) == 2:
         pos1, pos2 = selected_tiles
@@ -177,7 +177,7 @@ def get_tile_clicked(pos, grid_size):
     return row, col
 
 
-# Fonction affiche alerte
+# Fonction d'affiche d'une alerte
 def draw_alert_box():
     box_rect = pygame.Rect(100, 150, 300, 200)
     pygame.draw.rect(screen, GRAY, box_rect)
