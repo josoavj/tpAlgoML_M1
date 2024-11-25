@@ -47,7 +47,7 @@ def draw_rounded_rect(surface, color, rect, border_radius):
 
 # Bouton avec coins arrondis
 
-button_rect = (200, 400, 100, 50)  # x, y, largeur, hauteur
+button_rect = (200, 350, 100, 50)  # x, y, largeur, hauteur
 border_radius = 15  # Rayon des coins
 
 # Variables globales
@@ -148,11 +148,12 @@ def main():
                             if 150 <= x <= 350 and 240 + i * 40 <= y <= 280 + i * 40:
                                 chosen_swap = option
                                 dropdown_open_swap = False
-                    if chosen_grid and chosen_swap and 200 <= x <= 300 and 400 <= y <= 450:
+                    if chosen_grid and chosen_swap and 200 <= x <= 300 and 350 <= y <= 400:
                         grid_size = chosen_grid[1]
                         puzzle = create_puzzle(grid_size)
                         pieces = slice_image(puzzle_image, grid_size)
                         current_screen = "game"
+
                 # Gestion de l'alerte box
                 elif show_alert:
                     x,y = event.pos
@@ -189,13 +190,13 @@ def main():
                     swap_available = False
         if current_screen == "menu":
             screen.blit(background_image, (0, 0))
-            play_button_rect = pygame.Rect(150, 400, 200, 50)
+            play_button_rect = pygame.Rect(150, 355, 200, 50)
 
             # Bouton play
             # Dessiner le bouton
             draw_rounded_rect(screen, LIGHT_GREEN, button_rect, border_radius)
             # Texte du bouton
-            draw_text("PLAY", WHITE, button_rect[0] + button_rect[2] // 2, button_rect[1] + button_rect[3] // 2)
+            draw_text("JOUER", WHITE, button_rect[0] + button_rect[2] // 2, button_rect[1] + button_rect[3] // 2)
 
         elif current_screen == "options":
             screen.blit(background_image2, (0, 0))
@@ -224,7 +225,8 @@ def main():
                     # Dessiner le bouton
                     draw_rounded_rect(screen, LIGHT_GREEN, button_rect, border_radius)
                     draw_text(option[0], BLUE, SCREEN_WIDTH // 2, 260 + i * 40)
-            validate_button_rect = pygame.Rect(200, 400, 100, 50)
+
+            validate_button_rect = pygame.Rect(200, 200, 100, 50)
             # Bouton valider
 
             # Dessiner le bouton
