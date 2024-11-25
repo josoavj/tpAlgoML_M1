@@ -5,7 +5,6 @@ from ajoutTexte import draw_text
 from config import *
 from creationGrilleRand import create_puzzle, draw_grid
 from decoupeImage import slice_image
-from tuiles import get_tile_clicked, perfomr_swap, move_tile
 
 # Charger les images
 BACKGROUND_PATH = "assets/Main.png"  # Image de fond pour le menu
@@ -34,6 +33,7 @@ except pygame.error as e:
 grid_options = [("3 x 3", 3), ("4 x 4", 4)]
 swap_options = [("0", 0), ("4", 4), ("10", 10)]
 
+
 def draw_rounded_rect(surface, color, rect, border_radius):
     x, y, width, height = rect
     pygame.draw.rect(surface, color, (x + border_radius, y, width - 2 * border_radius, height))  # Rectangle central
@@ -46,25 +46,76 @@ def draw_rounded_rect(surface, color, rect, border_radius):
     pygame.draw.circle(surface, color, (x + width - border_radius, y + height - border_radius), border_radius)  # Coin inférieur droit
 
 # Bouton avec coins arrondis
+
 button_rect = (200, 400, 100, 50)  # x, y, largeur, hauteur
 border_radius = 15  # Rayon des coins
-
 
 # Variables globales
 chosen_grid = None
 chosen_swap = None
 dropdown_open_grid = False
 dropdown_open_swap = False
-move_count = 0
 swap_available = False
 show_alert = False
 swap_mode = False
+
+global move_count
+move_count = 0
+
+def move_tile(grid, direction):
+    # global move_count, swap_available, show_alert
+
+    global move_count, swap_available, show_alert
+
+    size = len(grid)
+    empty_x, empty_y = [(x, y) for x in range(size) for y in range(size) if grid[x][y] == 0][0]
+
+    moved = False
+    if direction == "UP" and empty_x < size - 1:
+        grid[empty_x][empty_y], grid[empty_x + 1][empty_y] = grid[empty_x + 1][empty_y], grid[empty_x][empty_y]
+        moved = True
+    elif direction == "DOWN" and empty_x > 0:
+        grid[empty_x][empty_y], grid[empty_x - 1][empty_y] = grid[empty_x - 1][empty_y], grid[empty_x][empty_y]
+        moved = True
+    elif direction == "LEFT" and empty_y < size - 1:
+        grid[empty_x][empty_y], grid[empty_x][empty_y + 1] = grid[empty_x][empty_y + 1], grid[empty_x][empty_y]
+        moved = True
+    elif direction == "RIGHT" and empty_y > 0:
+        grid[empty_x][empty_y], grid[empty_x][empty_y - 1] = grid[empty_x][empty_y - 1], grid[empty_x][empty_y]
+        moved = True
+
+    if moved:
+        move_count += 1
+        if chosen_swap[1] > 0 and move_count % chosen_swap[1] == 0:
+            swap_available = True
+            show_alert = True
+
+# Fonction pour échanger les tuiles
+
+
+def perfomr_swap(puzzle, selected_tiles):
+    if len(selected_tiles) == 2:
+        pos1, pos2 = selected_tiles
+        puzzle[pos1[0]][pos1[1]], puzzle[pos2[0]][pos2[1]] = puzzle[pos2[0]][pos2[1]], puzzle[pos1[0]][pos1[1]]
+        return True
+    return False
+
+# Fonction de sélection tuiles
+
+
+def get_tile_clicked(pos, grid_size):
+    tile_size = SCREEN_WIDTH // grid_size
+    x, y = pos
+    row = y // tile_size
+    col = x // tile_size
+    return row, col
 
 
 # Fonction principale
 def main():
     global chosen_grid, chosen_swap, dropdown_open_grid, dropdown_open_swap, show_alert, swap_available
     global swap_mode, selected_tiles
+    selected_tiles = []
     running = True
     puzzle = None
     pieces = None
@@ -102,7 +153,7 @@ def main():
                         puzzle = create_puzzle(grid_size)
                         pieces = slice_image(puzzle_image, grid_size)
                         current_screen = "game"
-                #Gestion de l'alerte box
+                # Gestion de l'alerte box
                 elif show_alert:
                     x,y = event.pos
                     ok_button_rect, close_button_rect = draw_alert_box()
@@ -112,7 +163,7 @@ def main():
                     elif close_button_rect.collidepoint(x,y):
                         show_alert = False
 
-                #échange tuiles
+                # échange tuiles
                 elif swap_mode and current_screen == "game":
                     tile_clicked = get_tile_clicked(event.pos, chosen_grid[1])
                     if tile_clicked not in selected_tiles:
@@ -133,7 +184,7 @@ def main():
             elif event.type == pygame.MOUSEBUTTONDOWN and show_alert:
                 x, y = event.pos
                 if 100 <= x <= 400 and 150 <= y <= 350:
-                    #Envoie une alerte
+                    # Envoie une alerte
                     show_alert = False
                     swap_available = False
         if current_screen == "menu":
@@ -150,7 +201,7 @@ def main():
             screen.blit(background_image2, (0, 0))
             draw_text("Choisissez vos options", WHITE, SCREEN_WIDTH // 2, 50)
 
-            #Bouton grille
+            # Bouton grille
             pygame.Rect(150, 100, 200, 40)
             # Dessiner le bouton
             draw_rounded_rect(screen, LIGHT_GREEN, button_rect, border_radius)
@@ -183,8 +234,8 @@ def main():
 
         elif current_screen == "game":
             draw_grid(puzzle, pieces, chosen_grid[1])
-            draw_text(f"Déplacements : {move_count}", BLUE, 50, 10, center = False )
-            if show_alert :
+            draw_text(f"Déplacements : {move_count}", BLUE, 50, 10, center=False)
+            if show_alert:
                 draw_alert_box()
             elif swap_mode:
                 draw_text("Mode Swap activé: Cliquez sur 2 tuiles", RED, SCREEN_WIDTH // 2, SCREEN_HEIGHT - 30)
@@ -192,6 +243,7 @@ def main():
         pygame.display.flip()
 
     pygame.quit()
+
 
 # Lancer le jeu
 if __name__ == "__main__":
