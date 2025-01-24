@@ -24,7 +24,7 @@
    - Objectif d'étude: Classification des fleurs d'Iris selon leurs espèces respectives en fonction de leurs sépales et pétales.
 
 2. Visualisation pour explorer les relations entre les variables
-   - ![Visuel](https://github.com/josoavj/tpAlgoML_M1/blob/master/TP2/assets/Iris.png)
+   ![Visuel](https://github.com/josoavj/tpAlgoML_M1/blob/master/TP2/assets/IrisVisual.png)
 
 3. Discussion des observations importantes à partir des visualisations:
    Cette visualisation représente la distribution des différentes espèces de la dataset Iris en fonction de la *longueur des sépales* (SepalLengthCm) et de leur *largeur* (SepalWidthCm). Voici les principales observations :
