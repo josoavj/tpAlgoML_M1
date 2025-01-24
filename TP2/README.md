@@ -56,3 +56,19 @@
    - En utilisant la régression logistique, on a pu avoir une précision (Accuracy) de 97,78
    - Puis en utilisant KNN, on a pu avoir une précision (Accuracy) de 100%
    - **Conclusion:** On conclue que la meilleure option est d'utiliser KNN
+
+## Exercice 2: Clustering – Données INSTAT
+
+1. Introduction des données fournies: 
+   - **Structure:** Tableau
+   - **Organisation:** Les données sont divisées par catégories telles que "Urbain" et "Rural", 
+   puis par genre ("Masculin", "Feminin", etc.), et incluent des sous-sections basées sur des quintiles de bien-être économique.
+   - **Variables:**
+     - Région
+     - Données Urbaines
+     - Données Rurales
+     - Quintiles économiques
+   - **Intêret:** 
+     - Analyse socio-économique : Les données permettent de comparer les caractéristiques démographiques et économiques entre régions, zones urbaines et rurales.
+     - Visualisation régionale : Comparaison des zones selon les indicateurs fournis.
+   
