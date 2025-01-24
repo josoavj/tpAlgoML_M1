@@ -51,3 +51,5 @@
    - Après l'application de KNN sur le modèle:
      
      ![KNN](https://github.com/josoavj/tpAlgoML_M1/blob/master/TP2/assets/KNN.png)
+
+5. Comparaison des performances des deux modèles
