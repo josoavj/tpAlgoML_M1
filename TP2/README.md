@@ -50,4 +50,4 @@
      ![K](https://github.com/josoavj/tpAlgoML_M1/blob/master/TP2/assets/Recherche%20de%20k.png)
    - Après l'application de KNN sur le modèle:
      
-     ![KNN]()
+     ![KNN](https://github.com/josoavj/tpAlgoML_M1/blob/master/TP2/assets/KNN.png)
