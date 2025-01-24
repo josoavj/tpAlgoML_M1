@@ -23,7 +23,8 @@
      - Espèce
    - **Objectif d'étude:** Classification des fleurs d'Iris selon leurs espèces respectives en fonction de leurs sépales et pétales.
 
-2. Visualisation pour explorer les relations entre les variables
+2. Visualisation pour explorer les relations entre les variables:
+
    ![Visuel](https://github.com/josoavj/tpAlgoML_M1/blob/master/TP2/assets/IrisVisual.png)
 
 3. Discussion des observations importantes à partir des visualisations:
@@ -42,5 +43,9 @@
    4. Cette visualisation illustre bien les différences morphologiques entre les trois espèces, avec une séparation nette pour Iris-setosa mais un chevauchement pour Iris-versicolor et Iris-virginica
 
 4. Application de deux modèles de classification au dataset Iris:
-   - Régression linéaire 
-   ![RegLinear](https://github.com/josoavj/tpAlgoML_M1/blob/master/TP2/assets/Regression%20logistique.png)
+   - Après l'application de la Régression logistique:  
+     ![RegLinear](https://github.com/josoavj/tpAlgoML_M1/blob/master/TP2/assets/Regression%20logistique.png)
+   - Application du KNN (KNearest Neighbour):
+   
+     ![KNN]()
+   - 
