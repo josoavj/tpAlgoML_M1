@@ -68,7 +68,7 @@
      - Données Urbaines
      - Données Rurales
      - Quintiles économiques
-   - **Intêret:** 
+   - **Interêt:** 
      - Analyse socio-économique : Les données permettent de comparer les caractéristiques démographiques et économiques entre régions, zones urbaines et rurales.
      - Visualisation régionale : Comparaison des zones selon les indicateurs fournis.
    
