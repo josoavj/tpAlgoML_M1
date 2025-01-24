@@ -47,5 +47,5 @@
      ![RegLinear](https://github.com/josoavj/tpAlgoML_M1/blob/master/TP2/assets/Regression%20logistique.png)
    - Application du KNN (KNearest Neighbour):
    
-     ![KNN]()
+     ![KNN](https://github.com/josoavj/tpAlgoML_M1/blob/master/TP2/assets/Recherche%20de%20k.png)
    - 
