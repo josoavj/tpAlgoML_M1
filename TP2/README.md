@@ -45,7 +45,9 @@
 4. Application de deux modèles de classification au dataset Iris:
    - Après l'application de la Régression logistique:  
      ![RegLinear](https://github.com/josoavj/tpAlgoML_M1/blob/master/TP2/assets/Regression%20logistique.png)
-   - Application du KNN (KNearest Neighbour):
+   - Recherche de K (KNearest Neighbour):
    
-     ![KNN](https://github.com/josoavj/tpAlgoML_M1/blob/master/TP2/assets/Recherche%20de%20k.png)
-   - 
+     ![K](https://github.com/josoavj/tpAlgoML_M1/blob/master/TP2/assets/Recherche%20de%20k.png)
+   - Après l'application de KNN sur le modèle:
+     
+     ![KNN]()
