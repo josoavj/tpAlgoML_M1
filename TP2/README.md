@@ -52,4 +52,7 @@
      
      ![KNN](https://github.com/josoavj/tpAlgoML_M1/blob/master/TP2/assets/KNN.png)
 
-5. Comparaison des performances des deux modèles
+5. Comparaison des performances des deux modèles: 
+   - En utilisant la régression logistique, on a pu avoir une précision (Accuracy) de 97,78
+   - Puis en utilisant KNN, on a pu avoir une précision (Accuracy) de 100%
+   - **Conclusion:** On conclue que la meilleure option est d'utiliser KNN
