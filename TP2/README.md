@@ -1,4 +1,9 @@
-# TP ML du 25 Janvier 2025 - Classification et Custering
+# MACHINE LEARNING
+
+- **Thème:** Classification et Clustering
+- **TP du:** 25 Janvier 2025
+- **Langage:** Python
+
 ## Réponses aux questions
 
 ## Exercice 1: Classification - Etude du Dataset Iris
