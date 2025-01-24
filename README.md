@@ -1,8 +1,8 @@
 #  ALGORITHMIQUE AVANCEE ET MACHINE LEARNING
 
-- **Thème:** Recherche à agent unique
-- **Langage:** Python (Pygame)
-- **TP du:** 22 Novembre 2024
+- Travaux Pratiques Algorithme Avancée et Machine Learning
+- M1 [ISPM](https://ispm-edu.com/) (Institut Supérieur Polytechnique de Madagascar)
+- Année Universitaire: 2023 - 2024
 
 ## Membres du Groupe
 
@@ -12,16 +12,6 @@
 - [RAFALIMANANA Minosoa Mampionona](https://github.com/MinosoaRafalimanana) IGGLIA4 N°40 **Rôle:** Développeur Front-end
 - [RAHELIMALALA Anja Nasandratra](https://github.com/AnjaRahelimalala) IGGLIA4 N°41 **Rôle:** Développeur Front-end 
 - [RABEMANANJARA Minoarisoa Jaela](https://github.com/FyJael) IGGLIA4 N°46 **Rôle:** Designer
-
-### Code fonctionnel
-
-- Main: **Sliding puzzle.ipynb**
-
-
-![Homepage](https://github.com/josoavj/tpAlgoML_M1/blob/master/assets/Home.png)
-![Options definition](https://github.com/josoavj/tpAlgoML_M1/blob/master/assets/Options.png)
-![sliding Game](https://github.com/josoavj/tpAlgoML_M1/blob/master/assets/Game.png)
-![8-puzzle 4-swap](https://github.com/josoavj/tpAlgoML_M1/blob/master/assets/8-puzzle4_swap.png)
 
 
 
