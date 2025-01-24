@@ -10,18 +10,18 @@
 
 1. Description du dataset Iris: 
    - C'est une classification des fleurs d'Iris selon leurs sépales et pétales.
-   - Origine: Exemple d'application de l'analyse discriminante linéaire à partir du fleur d'Iris de trois espèces. 
+   - **Origine:** Exemple d'application de l'analyse discriminante linéaire à partir du fleur d'Iris de trois espèces. 
    - Les trois espèces d'Iris sont:
      - Setosa
      - Versicolor
      - Virginica
-   - Variables: 
+   - **Variables:** 
      - Largeur sépale, 
      - Longeur sépale, 
      - Largeur pétale, 
      - Longueur pétale, 
      - Espèce
-   - Objectif d'étude: Classification des fleurs d'Iris selon leurs espèces respectives en fonction de leurs sépales et pétales.
+   - **Objectif d'étude:** Classification des fleurs d'Iris selon leurs espèces respectives en fonction de leurs sépales et pétales.
 
 2. Visualisation pour explorer les relations entre les variables
    ![Visuel](https://github.com/josoavj/tpAlgoML_M1/blob/master/TP2/assets/IrisVisual.png)
@@ -39,5 +39,8 @@
       - Iris-setosa a généralement des sépales plus courts (autour de 4,5 à 5,5 cm) et plus larges (entre 3 et 4,5 cm).
       - Iris-versicolor a des sépales de longueur intermédiaire (5,5 à 7 cm) et de largeur légèrement plus étroite (2,5 à 3,5 cm).
       - Iris-virginica a les sépales les plus longs (6 à 8 cm) mais pas nécessairement les plus larges (2 à 3,5 cm).
-   - Cette visualisation illustre bien les différences morphologiques entre les trois espèces, avec une séparation nette pour Iris-setosa mais un chevauchement pour Iris-versicolor et Iris-virginica
-   
+   4. Cette visualisation illustre bien les différences morphologiques entre les trois espèces, avec une séparation nette pour Iris-setosa mais un chevauchement pour Iris-versicolor et Iris-virginica
+
+4. Application de deux modèles de classification au dataset Iris:
+   - Régression linéaire 
+   ![RegLinear](https://github.com/josoavj/tpAlgoML_M1/blob/master/TP2/assets/Regression%20logistique.png)
