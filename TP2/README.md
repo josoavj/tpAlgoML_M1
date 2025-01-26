@@ -3,6 +3,8 @@
 - **Thème:** Classification et Clustering
 - **TP du:** 25 Janvier 2025
 - **Langage:** Python
+- **Membres du groupe:**  [Voir plus](https://github.com/josoavj/tpAlgoML_M1/blob/master/README.md)
+- **Notice :** Veuillez ouvrir les fichier ".ipynb" dans [Google Collab](https://colab.research.google.com/)
 
 ## Réponses aux questions
 
