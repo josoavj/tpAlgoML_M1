@@ -14,5 +14,7 @@
 - [RABEMANANJARA Minoarisoa Jaela](https://github.com/FyJael) **IGGLIA4** N°46 **Rôle:** Designer
 
 
+### Autres
 
+- Lien vers le nouveau TP: **dans next.md** et **[TPAlgoML](https://github.com/josoavj/TPAlgoML_140225)**
 
