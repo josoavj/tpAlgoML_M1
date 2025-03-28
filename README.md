@@ -13,6 +13,22 @@
 - [RAHELIMALALA Anja Nasandratra](https://github.com/AnjaRahelimalala) **IGGLIA4** N°41 **Rôle:** Développeur Front-end 
 - [RABEMANANJARA Minoarisoa Jaela](https://github.com/FyJael) **IGGLIA4** N°46 **Rôle:** Designer
 
+### 📂 Structuration des dossiers
+
+```
+tpAlgoML_M1/                              # Dossier principal
+├── TP1                                   # TP Algo Avancée du 22 Novembre 2024
+    ├── assets/                           # Fichiers tiers
+    └── README.md                         # Documentation du TP 22/11/24
+├── TP2                                   # TP Machine Learning du 25 Janvier 2025
+    ├── assets/                           # Fichiers tiers
+    └── README.md                         # Documentation
+├── Computer Vision                       # TP Machine Learning du 28 Mars 2025
+    ├──  
+    ├──
+    └──
+└── README.md                             # Documentation
+```
 
 ### Autres
 
