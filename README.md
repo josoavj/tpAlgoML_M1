@@ -18,10 +18,10 @@
 ```
 tpAlgoML_M1/                              # Dossier principal
 ├── TP1                                   # TP Algo Avancée du 22 Novembre 2024
-    ├── assets/                           # Fichiers tierces
+    ├── assets/                           # Fichiers tiers
     └── README.md                         # Documentation du TP 22/11/24
 ├── TP2                                   # TP Machine Learning du 25 Janvier 2025
-    ├── assets/                           # Fichiers tierces
+    ├── assets/                           # Fichiers tiers
     └── README.md                         # Documentation
 ├── Computer Vision                       # TP Machine Learning du 28 Mars 2025
     ├──  
