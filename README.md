@@ -16,18 +16,19 @@
 ### 📂 Structuration des dossiers
 
 ```
-tpAlgoML_M1/                              # Dossier principal
-├── TP1                                   # TP Algo Avancée du 22 Novembre 2024
-    ├── assets/                           # Fichiers tiers
-    └── README.md                         # Documentation du TP 22/11/24
-├── TP2                                   # TP Machine Learning du 25 Janvier 2025
-    ├── assets/                           # Fichiers tiers
-    └── README.md                         # Documentation
-├── Computer Vision                       # TP Machine Learning du 28 Mars 2025
-    ├──  
-    ├──
-    └──
-└── README.md                             # Documentation
+tpAlgoML_M1/                                    # Dossier principal
+├── TP1                                         # TP Algo Avancée du 22 Novembre 2024
+    ├── assets/                                 # Fichiers tiers
+    └── README.md                               # Documentation du TP 22/11/24
+├── TP2                                         # TP Machine Learning du 25 Janvier 2025
+    ├── assets/                                 # Fichiers tiers
+    └── README.md                               # Documentation
+├── Computer Vision                             # TP Machine Learning du 28 Mars 2025
+    ├──  Autoencodeurs_par_groupe.ipynb         # Fichier Notebook du devoir par groupe
+    ├── fanilo.ipynb                            # Fichier Notebook du devoir individuel de Fanilo
+    ├── josoa.ipynb                             # Fichier Notebook du devoir individuel de Josoa
+    └── maminirina.ipynb                        # Fichier Notebook du devoir individuel de Maminirina
+└── README.md                                   # Documentation
 ```
 
 ### Autres
