@@ -29,6 +29,7 @@ tpAlgoML_M1/                                    # Dossier principal
     ├── josoa.ipynb                             # Fichier Notebook du devoir individuel de Josoa
     └── maminirina.ipynb                        # Fichier Notebook du devoir individuel de Maminirina
 ├── next.md                                     # Fichier contenant le lien vers le TP AlgoML du 14 Février 2025
+├── Final Exam (ML)                             # Examen final (S2) en ML
 └── README.md                                   # Documentation
 ```
 
